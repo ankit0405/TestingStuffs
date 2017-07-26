@@ -1,14 +1,14 @@
-import { MyTestAppPage } from './app.po';
+import { AnkitTestPage } from './app.po';
 
-describe('my-test-app App', () => {
-  let page: MyTestAppPage;
+describe('ankit-test App', () => {
+  let page: AnkitTestPage;
 
   beforeEach(() => {
-    page = new MyTestAppPage();
+    page = new AnkitTestPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

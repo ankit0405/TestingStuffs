@@ -1,6 +1,6 @@
-import { browser, element, by } from 'protractor';
+import { browser, by, element } from 'protractor';
 
-export class MyTestAppPage {
+export class AnkitTestPage {
   navigateTo() {
     return browser.get('/');
   }
